@@ -61,7 +61,7 @@ services:
 * **<ins>`TZ`</ins>:** Establece la zona horaria del contenedor.
 
 ## Configuración del almacenamiento persistente
-### `'/path/to/host/uptime/:/app/data'`
+Para configurar el almacenamiento persistente en `docker-compose.yml`, hay que agregar `'/path/to/host/uptime/:/app/data'` dentro de la sección `volumes` del servicio.
 * **<ins>`/path/to/host/uptime/`</ins>:** Es la ruta exacta en tu máquina real (el host) donde se guardarán los archivos.
 * **`:`:** El separador que indica "conectar con".
 * **<ins>`/app/data`</ins>:** Es la ruta interna dentro del contenedor de `Docker` donde la aplicación almacena su información.
