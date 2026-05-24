@@ -1,4 +1,4 @@
-# Docker Compose
+# Información para contruir `Docker Compose`
 ## Idiomas
 ### `LANG`, `LANGUAGE` y `LC_ALL`
 
