@@ -12,7 +12,7 @@ Para configurar `LANG`, `LANGUAGE` y `LC_ALL` en `docker-compose.yml`, debes def
 
 #### Ejemplo práctico
 ```YML
-version: '3.8'
+version: '3.9'
 
 services:
   mi-aplicacion:
