@@ -60,6 +60,16 @@ services:
 ### Explicación de las variables
 * **<ins>`TZ`</ins>:** Establece la zona horaria del contenedor.
 
+## Conectar una carpeta del host con una carpeta interna del contenedor
+### `'/path/to/host/uptime/:/app/data'`
+* **<ins>`/path/to/host/uptime/`</ins>:** Es la ruta exacta en tu máquina real (el host) donde se guardarán los archivos.
+* **`:`:** El separador que indica "conectar con".
+* **<ins>`/app/data`</ins>:** Es la ruta interna dentro del contenedor de Docker donde la aplicación almacena su información.
+
+### ¿Por qué se usa?
+* **<ins>Persistencia de datos</ins>:** Si el contenedor se elimina o se actualiza, la información generada por la aplicación no se pierde porque está respaldada en tu disco duro.
+* **<ins>Uso común</ins>:** Se utiliza frecuentemente para herramientas de monitoreo como `Uptime Kuma` u otros servicios, de modo que tu historial de registros y configuraciones persista.
+
 ## Ejemplo de archivo `docker-compose.yml` (lo más completo posible)
 ```YML
 version: '3.9'
