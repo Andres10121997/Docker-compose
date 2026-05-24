@@ -60,7 +60,7 @@ services:
 ### Explicación de las variables
 * **<ins>`TZ`</ins>:** Establece la zona horaria del contenedor.
 
-## ¿Cómo guardar la información de la aplicación (dentro de un contenedor `Docker`) en la máquina real?
+## Configuración del almacenamiento persistente
 ### `'/path/to/host/uptime/:/app/data'`
 * **<ins>`/path/to/host/uptime/`</ins>:** Es la ruta exacta en tu máquina real (el host) donde se guardarán los archivos.
 * **`:`:** El separador que indica "conectar con".
