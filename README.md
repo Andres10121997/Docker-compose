@@ -37,7 +37,7 @@ La matriz `DateTimeFormat.MonthNames` de `C#` considera el idioma y la configura
 * **<ins>Uso explícito</ins>:** También es posible sobrescribir este comportamiento y especificar manualmente una cultura diferente al formatear una fecha, por ejemplo, utilizando `ToString("MMMM", new CultureInfo("es-CL"))` para forzar el nombre del mes en inglés.
 
 ## Zona horaria
-Para configurar la zona horaria de docker, hay que definir la variable de entorno `TZ` dentro de la sección `environment` del servicio.
+Para configurar la zona horaria en `docker-compose.yml`, hay que definir la variable de entorno `TZ` dentro de la sección `environment` del servicio.
 
 ### ¿Cómo hacerlo?
 1. Abre tu archivo `docker-compose.yml`.
