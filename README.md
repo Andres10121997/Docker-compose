@@ -86,5 +86,6 @@ services:
       - LANGUAGE=es_ES:es
       - LC_ALL=es_ES.UTF-8
     volumes:
+      # Configuración del almacenamiento persistente
       - '/path/to/host/uptime/:/app/data'
 ```
