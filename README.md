@@ -59,3 +59,20 @@ services:
 
 ### Explicación de las variables
 * **<ins>`TZ`</ins>:** Establece la zona horaria del contenedor.
+
+## Ejemplo de archivo `docker-compose.yml` (lo más completo posible)
+```YML
+version: '3.9'
+
+services:
+  mi-aplicacion:
+    image: mi-imagen-de-aplicacion
+    restart: always
+    environment:
+      # Zona horaria
+      - TZ=America/Santiago # Zona horaria de Santiago de Chile
+      # Idioma
+      - LANG=es_ES.UTF-8
+      - LANGUAGE=es_ES:es
+      - LC_ALL=es_ES.UTF-8
+```
