@@ -60,11 +60,11 @@ services:
 ### Explicación de las variables
 * **<ins>`TZ`</ins>:** Establece la zona horaria del contenedor.
 
-## Conectar una carpeta del host con una carpeta interna del contenedor
+## ¿Cómo guardar la información de la aplicación (dentro de un contenedor `Docker`) en la máquina real?
 ### `'/path/to/host/uptime/:/app/data'`
 * **<ins>`/path/to/host/uptime/`</ins>:** Es la ruta exacta en tu máquina real (el host) donde se guardarán los archivos.
 * **`:`:** El separador que indica "conectar con".
-* **<ins>`/app/data`</ins>:** Es la ruta interna dentro del contenedor de Docker donde la aplicación almacena su información.
+* **<ins>`/app/data`</ins>:** Es la ruta interna dentro del contenedor de `Docker` donde la aplicación almacena su información.
 
 ### ¿Por qué se usa?
 * **<ins>Persistencia de datos</ins>:** Si el contenedor se elimina o se actualiza, la información generada por la aplicación no se pierde porque está respaldada en tu disco duro.
