@@ -7,7 +7,7 @@ Para configurar `LANG`, `LANGUAGE` y `LC_ALL` en `docker-compose.yml`, debes def
 environment:
   - LANG=es_ES.UTF-8
   - LANGUAGE=es_ES:es
-- LC_ALL=es_ES.UTF-8
+  - LC_ALL=es_ES.UTF-8
 ```
 
 #### Cómo hacerlo
