@@ -54,7 +54,7 @@ services:
     image: mi-imagen-de-aplicacion
     environment:
       # Zona horaria
-      - TZ=America/Santiago
+      - TZ=America/Santiago # Zona horaria de Santiago de Chile
 ```
 
 ### Explicación de las variables
