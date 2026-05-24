@@ -16,7 +16,7 @@ version: '3.9'
 
 services:
   mi-aplicacion:
-    image: mi-imagen-de-aplicacion # Advertencia: Este es un "nombre" (mi-imagen-de-aplicacion) es un ejemplo, hay que cambiar este "nombre" a la de la imagen del proyecto.
+    image: mi-imagen-de-aplicacion # Advertencia: Este es un "nombre" (mi-imagen-de-aplicacion) de ejemplo, hay que cambiar este "nombre" a la de la imagen del proyecto.
     environment:
       # Idioma
       - LANG=es_ES.UTF-8
@@ -51,7 +51,7 @@ version: '3.9'
 
 services:
   mi-aplicacion:
-    image: mi-imagen-de-aplicacion # Advertencia: Este es un "nombre" (mi-imagen-de-aplicacion) es un ejemplo, hay que cambiar este "nombre" a la de la imagen del proyecto.
+    image: mi-imagen-de-aplicacion # Advertencia: Este es un "nombre" (mi-imagen-de-aplicacion) de ejemplo, hay que cambiar este "nombre" a la de la imagen del proyecto.
     environment:
       # Zona horaria
       - TZ=America/Santiago # Zona horaria de Santiago de Chile
@@ -66,7 +66,7 @@ version: '3.9'
 
 services:
   mi-aplicacion:
-    image: mi-imagen-de-aplicacion # Advertencia: Este es un "nombre" (mi-imagen-de-aplicacion) es un ejemplo, hay que cambiar este "nombre" a la de la imagen del proyecto.
+    image: mi-imagen-de-aplicacion # Advertencia: Este es un "nombre" (mi-imagen-de-aplicacion) de ejemplo, hay que cambiar este "nombre" a la de la imagen del proyecto.
     restart: always
     environment:
       # Zona horaria
