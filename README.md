@@ -41,7 +41,7 @@ Para configurar la zona horaria de docker, hay que definir la variable de entorn
 
 ### ¿Cómo hacerlo?
 1. Abre tu archivo `docker-compose.yml`.
-2. Busca la sección `services` y el servicio para el que quieres configurar el idioma.
+2. Busca la sección `services` y el servicio para el que quieres configurar la zona horaria.
 3. Añade la sección `environment`, si aún no existe.
 4. Define la variable de entorno dentro de la sección `environment` con la zona horaria que necesites.
 
