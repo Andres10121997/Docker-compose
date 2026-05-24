@@ -85,4 +85,6 @@ services:
       - LANG=es_ES.UTF-8
       - LANGUAGE=es_ES:es
       - LC_ALL=es_ES.UTF-8
+    volumes:
+      - '/path/to/host/uptime/:/app/data'
 ```
