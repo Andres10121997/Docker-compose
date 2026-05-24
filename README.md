@@ -2,18 +2,12 @@
 ## Idiomas
 ### `LANG`, `LANGUAGE` y `LC_ALL`
 
-Para configurar `LANG`, `LANGUAGE` y `LC_ALL` en `docker-compose.yml`, debes definirlas como variables de entorno dentro de la sección `environment` de tu servicio. Esto asegura que el idioma y la configuración regional se establezcan correctamente dentro del contenedor de la aplicación, por ejemplo:
-```YML
-environment:
-  - LANG=es_ES.UTF-8
-  - LANGUAGE=es_ES:es
-  - LC_ALL=es_ES.UTF-8
-```
+Para configurar `LANG`, `LANGUAGE` y `LC_ALL` en `docker-compose.yml`, debes definirlas como variables de entorno dentro de la sección `environment` de tu servicio. Esto asegura que el idioma y la configuración regional se establezcan correctamente dentro del contenedor de la aplicación.
 
-#### Cómo hacerlo
+#### ¿Cómo hacerlo?
 1. Abre tu archivo `docker-compose.yml`.
 2. Busca la sección `services` y el servicio para el que quieres configurar el idioma.
-3. Añade la sección `environment` si aún no existe.
+3. Añade la sección `environment`, si aún no existe.
 4. Define las variables de entorno dentro de la sección `environment` con los valores en español.
 
 #### Ejemplo práctico
