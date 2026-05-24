@@ -18,7 +18,7 @@ services:
   mi-aplicacion:
     image: mi-imagen-de-aplicacion
     environment:
-      # Idiomas
+      # Idioma
       - LANG=es_ES.UTF-8
       - LANGUAGE=es_ES:es
       - LC_ALL=es_ES.UTF-8
@@ -35,3 +35,27 @@ La matriz `DateTimeFormat.MonthNames` de `C#` considera el idioma y la configura
 * **<ins>Especificidad cultural</ins>:** `DateTimeFormatInfo` es una clase que contiene propiedades para el formato de fecha y hora, como los nombres de los meses, días de la semana, y formatos de números específicos de cada cultura (por ejemplo, `es-CL` para español de Chile o `en-US` para inglés de Estados Unidos de América).
 * **<ins>Adaptación automática</ins>:** Cuando se utiliza sin especificar una cultura, `C#` utiliza la cultura actual del sistema operativo como valor predeterminado. Esto significa que `DateTimeFormat.MonthNames` contendrá automáticamente los nombres de los meses correspondientes a esa cultura.
 * **<ins>Uso explícito</ins>:** También es posible sobrescribir este comportamiento y especificar manualmente una cultura diferente al formatear una fecha, por ejemplo, utilizando `ToString("MMMM", new CultureInfo("es-CL"))` para forzar el nombre del mes en inglés.
+
+## Zona horaria
+Para configurar la zona horaria de docker, hay que definir la variable de entorno `TZ` dentro de la sección `environment` del servicio.
+
+### ¿Cómo hacerlo?
+1. Abre tu archivo `docker-compose.yml`.
+2. Busca la sección `services` y el servicio para el que quieres configurar el idioma.
+3. Añade la sección `environment`, si aún no existe.
+4. Define la variable de entorno dentro de la sección `environment` con la zona horaria que necesites.
+
+### Ejemplo práctico
+```YML
+version: '3.9'
+
+services:
+  mi-aplicacion:
+    image: mi-imagen-de-aplicacion
+    environment:
+      # Zona horaria
+      - TZ=America/Santiago
+```
+
+### Explicación de las variables
+* **<ins>`TZ`</ins>:** Establece la zona horaria del contenedor.
