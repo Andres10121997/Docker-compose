@@ -18,6 +18,7 @@ services:
   mi-aplicacion:
     image: mi-imagen-de-aplicacion
     environment:
+      # Idiomas
       - LANG=es_ES.UTF-8
       - LANGUAGE=es_ES:es
       - LC_ALL=es_ES.UTF-8
